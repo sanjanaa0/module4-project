@@ -8,7 +8,7 @@ function App() {
   const [description, setDescription] = useState("");
 
   const getProducts = () => {
-    fetch("http://127.0.0.1:8000/api/products/")
+    fetch("https://module4-project.onrender.com/api/products/")
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error(error));
@@ -21,7 +21,7 @@ function App() {
   const addProduct = (e) => {
     e.preventDefault();
 
-    fetch("http://127.0.0.1:8000/api/products/", {
+    fetch("https://module4-project.onrender.com/api/products/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
