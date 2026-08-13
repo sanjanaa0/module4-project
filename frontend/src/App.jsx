@@ -8,7 +8,7 @@ function App() {
   const [description, setDescription] = useState("");
 
   const getProducts = () => {
-    fetch("https://module4-project.onrender.com/api/products/")
+    fetch("https://module4-project-1.onrender.com/api/products/")
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error(error));
@@ -21,7 +21,7 @@ function App() {
   const addProduct = (e) => {
     e.preventDefault();
 
-    fetch("https://module4-project.onrender.com/api/products/", {
+    fetch("https://module4-project-1.onrender.com/api/products/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
