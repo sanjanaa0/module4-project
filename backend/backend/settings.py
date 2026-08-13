@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
      "module4-project-1.onrender.com",
+     "module4-project-2.onrender.com",
     "localhost",
     "127.0.0.1",
 ]
