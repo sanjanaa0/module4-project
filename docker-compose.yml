@@ -16,6 +16,12 @@ services:
     command: gunicorn backend.wsgi:application --bind 0.0.0.0:8000
     ports:
       - "8000:8000"
+    environment:
+      DATABASE_NAME: module4_db
+      DATABASE_USER: postgres
+      DATABASE_PASSWORD: postgres
+      DATABASE_HOST: db
+      DATABASE_PORT: 5432
     depends_on:
       - db
 
